@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SHIFT is a student webzine exploring technology, design and digital culture. Discover our first issue on the design of everyday scrolling.">
+  <meta name="author" content="AJ Grange">
+  <meta name="theme-color" content="#0f172a">
+  <title>SHIFT — Technology, Design &amp; Culture</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header container">
+    <div class="site-branding">
+      <a class="brand" href="index.html" aria-label="SHIFT home">SHIFT.</a>
+      <p class="brand-tagline">Technology / Design / Culture</p>
+    </div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="detail.html">Feature</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="home-main container" id="main-content">
+    <p class="eyebrow issue-label">Issue 01 / Digital life</p>
+
+    <!-- Grid controls the large page split. Each panel stacks on mobile. -->
+    <section class="hero-grid" aria-labelledby="feature-title">
+      <div class="hero-banner">
+        <p class="eyebrow">Featured story</p>
+        <h1 id="feature-title">The design of<br>everyday scrolling.</h1>
+        <p class="hero-summary">A closer look at the interface choices behind the feed, and the way we move through digital life.</p>
+        <a class="button" href="detail.html">Read the feature</a>
+      </div>
+
+      <aside class="hero-sidebar" aria-labelledby="editor-heading">
+        <h2 id="editor-heading">From the editor</h2>
+        <p class="editor-intro">SHIFT is a student webzine exploring technology, design and digital culture. Edited by AJ Grange.</p>
+        <div class="quick-links">
+          <h3 class="eyebrow">In this issue</h3>
+          <ul class="topic-links" aria-label="Explore the issue">
+            <li><a href="detail.html#endless-feed">Culture</a></li>
+            <li><a href="detail.html#interface-cues">Design</a></li>
+            <li><a href="detail.html#designing-with-intention">Technology</a></li>
+          </ul>
+          <a class="editor-contact" href="#contact">Contact the editor</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="issue-feed" id="stories" aria-labelledby="stories-heading">
+      <h2 class="section-title" id="stories-heading">From this issue</h2>
+
+      <div class="cards-gallery">
+        <article class="card" aria-labelledby="story-one-title">
+          <img class="card-image" src="assets/scrolling.svg" alt="" width="1200" height="400">
+          <p class="eyebrow card-category">Digital culture</p>
+          <h3 id="story-one-title">The design of everyday scrolling</h3>
+          <p class="card-excerpt">Start with the story behind the feed and the choices that shape it.</p>
+          <a class="card-link" href="detail.html">Read feature<span class="visually-hidden">: The design of everyday scrolling</span><span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="card" aria-labelledby="story-two-title">
+          <img class="card-image" src="assets/interface-cues.svg" alt="" width="960" height="400">
+          <p class="eyebrow card-category">Design</p>
+          <h3 id="story-two-title">The role of interface cues</h3>
+          <p class="card-excerpt">Explore buttons, spacing and recommendations as deliberate design choices.</p>
+          <a class="card-link" href="detail.html#interface-cues">Read this section<span class="visually-hidden">: The role of interface cues</span><span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="card" aria-labelledby="story-three-title">
+          <img class="card-image" src="assets/intention.svg" alt="" width="960" height="400">
+          <p class="eyebrow card-category">Culture</p>
+          <h3 id="story-three-title">Designing with intention</h3>
+          <p class="card-excerpt">Consider the place of deliberate choices in a connected routine.</p>
+          <a class="card-link" href="detail.html#designing-with-intention">Read this section<span class="visually-hidden">: Designing with intention</span><span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner container">
+      <p class="copyright">&copy; 2026 SHIFT. A student webzine by AJ Grange.</p>
+      <div class="footer-contact">
+        <p class="eyebrow">Contact the editor</p>
+        <a href="https://github.com/grangeal">AJ Grange on GitHub <span aria-hidden="true">&nearr;</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A SHIFT feature on infinite feeds, interface cues and the design choices that shape everyday scrolling.">
+  <meta name="author" content="AJ Grange">
+  <meta name="theme-color" content="#0f172a">
+  <title>The Design of Everyday Scrolling — SHIFT</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header container">
+    <div class="site-branding">
+      <a class="brand" href="index.html" aria-label="SHIFT home">SHIFT.</a>
+      <p class="brand-tagline">Technology / Design / Culture</p>
+    </div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="detail.html">Feature</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="detail-layout container" id="main-content">
+    <section class="detail-hero" aria-labelledby="article-title">
+      <p class="eyebrow">Digital culture / Issue 01</p>
+      <h1 id="article-title">The design of everyday scrolling.</h1>
+      <p class="lead-text">An introduction to the choices behind the feed, and the everyday experience of moving through digital spaces.</p>
+      <p class="byline">By AJ Grange / A student editorial</p>
+    </section>
+
+    <!-- The article and its metadata use a 3fr / 1fr desktop Grid. -->
+    <div class="content-grid">
+      <article class="article-body" aria-labelledby="article-title">
+        <figure class="feature-figure">
+          <img src="assets/scrolling.svg" alt="An illustration of content cards continuing through a phone screen, surrounded by smaller cards." width="1200" height="400">
+          <figcaption>The feed keeps moving. The choices around it deserve a closer look. Illustration for SHIFT.</figcaption>
+        </figure>
+
+        <section class="article-section" id="endless-feed" aria-labelledby="endless-feed-heading">
+          <h2 id="endless-feed-heading">What makes a feed feel endless?</h2>
+          <p>You open an app to check one thing. A few swipes later, the screen offers another post, another clip, another reason to stay. There is no final page to turn and no clear moment when the issue is finished. That familiar experience begins with a layout decision: what should happen when a reader reaches the bottom?</p>
+          <p>The W3C's <a href="#source-feed">feed pattern guidance</a> describes a feed as a collection of articles that can load more content while someone scrolls. The browser can help support this behaviour: tools such as the <a href="#source-observer">Intersection Observer API</a> let developers detect when an element comes into view. More content can arrive without asking the reader to open a new page.</p>
+          <p>This can be useful when browsing has no fixed destination. The trade-off is the disappearance of a natural stopping point. A printed magazine ends; a continuously refreshed feed can always offer something else. My concern is the experience that remains when the interface removes that small invitation to pause.</p>
+        </section>
+
+        <section class="article-section" id="interface-cues" aria-labelledby="interface-cues-heading">
+          <h2 id="interface-cues-heading">The role of interface cues</h2>
+          <p>A screen communicates through small signals. A heading separates one idea from the next. A contrasting button suggests an action. Space around a paragraph gives it room to be read. Each decision helps define what is noticeable, what seems related and where someone might go next. Those choices become especially interesting when a page keeps adding material.</p>
+          <p>Consider the difference between a clear “Load more” button and content that simply appears. The button makes the next step explicit. Automatic loading asks for less action, but leaves more of the transition to the interface. Neither arrangement fits every situation. The useful question is whether the interaction helps someone understand and control their place.</p>
+          <p>Control also includes people navigating without a mouse. The W3C's <a href="#source-focus">Focus Visible guidance</a> explains why a visible keyboard focus indicator matters: it shows which control will respond. A polished-looking page still needs these practical signals. An outline around a link can do more for a reader than an elaborate animation.</p>
+        </section>
+
+        <section class="article-section" id="designing-with-intention" aria-labelledby="intention-heading">
+          <h2 id="intention-heading">Designing with intention</h2>
+          <p>For this issue of SHIFT, I wanted a reading experience with a visible shape. The homepage introduces the feature, the cards offer different entry points, and the article has a beginning and an end. A reader can jump to a section or return to the issue. These are modest choices, but together they make the route through the story easier to see.</p>
+          <p>That is also how I think about a more deliberate digital routine. Before opening a feed, it can help to know what brought you there: a specific update, a conversation or a few minutes of browsing. The purpose does not need to be serious. It simply gives the session a shape that an endless interface might otherwise leave open.</p>
+          <p>Good design can make room for both curiosity and a clear exit. I would like more interfaces to treat finishing as a worthwhile outcome. When a page helps someone find what they came for and leave with it, that is a successful interaction too.</p>
+        </section>
+
+        <section class="further-reading" aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Further reading</h2>
+          <ol class="source-list">
+            <li id="source-feed"><a href="https://www.w3.org/WAI/ARIA/apg/patterns/feed/">W3C Web Accessibility Initiative: Feed Pattern</a></li>
+            <li id="source-observer"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">MDN Web Docs: Intersection Observer API</a></li>
+            <li id="source-focus"><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html">W3C Web Accessibility Initiative: Focus Visible</a></li>
+          </ol>
+        </section>
+
+        <a class="button back-link" href="index.html#stories"><span aria-hidden="true">&larr;</span> Back to all stories</a>
+      </article>
+
+      <aside class="article-sidebar" aria-label="Article information">
+        <section class="metadata-panel" aria-labelledby="metadata-heading">
+          <h2 id="metadata-heading">Article details</h2>
+          <dl class="article-metadata">
+            <div><dt>Author</dt><dd>AJ Grange</dd></div>
+            <div><dt>Category</dt><dd>Digital culture</dd></div>
+            <div><dt>Issue</dt><dd>01 / <time datetime="2026-10">October 2026</time></dd></div>
+            <div><dt>Format</dt><dd>Feature article</dd></div>
+          </dl>
+        </section>
+
+        <nav class="article-contents" aria-labelledby="contents-heading">
+          <h2 id="contents-heading">In this article</h2>
+          <ol>
+            <li><a href="#endless-feed"><span>01</span> The endless feed</a></li>
+            <li><a href="#interface-cues"><span>02</span> Interface cues</a></li>
+            <li><a href="#designing-with-intention"><span>03</span> Design with intention</a></li>
+          </ol>
+        </nav>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner container">
+      <p class="copyright">&copy; 2026 SHIFT. A student webzine by AJ Grange.</p>
+      <div class="footer-contact">
+        <p class="eyebrow">Contact the editor</p>
+        <a href="https://github.com/grangeal">AJ Grange on GitHub <span aria-hidden="true">&nearr;</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
